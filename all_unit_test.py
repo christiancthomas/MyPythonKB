@@ -6,10 +6,10 @@
     │       └── pylint.yml
     ├── source/
     │   └── simple_input_output/
-    │       ├── main.py
+    │       ├── classes.py
     │       └── test_main.py
     │   └── simple_flask/
-    │       ├── main.py
+    │       ├── classes.py
     │       └── test_main.py
 """
 import os
