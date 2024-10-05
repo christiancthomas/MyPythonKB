@@ -8,6 +8,7 @@ class Shape:
     def __str__(self):
         return f"Shape(color={self.color})"
 
+
 class Rectangle(Shape):
     def __init__(self, width=0, height=0, color="red"):
         super().__init__(color)
@@ -24,6 +25,7 @@ class Rectangle(Shape):
 
     def __str__(self):
         return f"Rectangle(width={self.width}, height={self.height}, color={self.color})"
+
 
 class Circle(Shape):
     def __init__(self, radius=0, color="red"):

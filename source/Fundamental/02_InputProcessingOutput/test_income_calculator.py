@@ -2,6 +2,7 @@
 Unit test for the income_calculator.py
 """
 import unittest
+
 from income_calculator import calculate_net_monthly_income, calculate_yearly_income
 
 
@@ -9,6 +10,7 @@ class TestIncomeCalculations(unittest.TestCase):
     """
     Test cases for income calculation functions.
     """
+
     def test_calculate_net_monthly_income(self):
         """
         Test the net monthly income calculation.

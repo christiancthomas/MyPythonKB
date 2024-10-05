@@ -2,8 +2,8 @@
 This module contains unit tests for the input_output module.
 """
 
-
 import unittest
+
 from input_output import process_input
 
 
@@ -11,6 +11,7 @@ class TestMain(unittest.TestCase):
     """
     TestMain is a test case class for testing the process_input function.
     """
+
     def test_process_input(self):
         """
         Test the process_input function.

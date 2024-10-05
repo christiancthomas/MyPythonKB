@@ -2,6 +2,7 @@
 Unit tests for the calculate_costs function from the input_processing_output module.
 """
 import unittest
+
 from input_processing_output import calculate_costs
 
 
@@ -9,6 +10,7 @@ class TestCostCalculations(unittest.TestCase):
     """
    Test cases for the calculate_costs function.
    """
+
     def test_calculate_costs(self):
         """
         Test the calculate_costs function with different sets of inputs.
