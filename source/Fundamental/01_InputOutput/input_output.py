@@ -18,5 +18,5 @@ def process_input(new_input):
 
 if __name__ == "__main__":
     user_input = input("Please enter something: ")
-    output = process_input(user_input)
-    print(output)
+    OUTPUT = process_input(user_input)
+    print(OUTPUT)
