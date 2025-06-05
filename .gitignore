@@ -8,3 +8,5 @@ source/Untitled.ipynb
 resources/images/.DS_Store
 source/readme.md
 source/**/__pycache__/
+.ipynb_checkpoints
+
