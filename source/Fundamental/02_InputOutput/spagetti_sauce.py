@@ -29,10 +29,10 @@ main function:
 """
 
 # Define function Spaghetti Sauce Caculator(number_of_serving -> #):
-#     tomato_sauce is equal to # * 2
-#     cup_of_tomato_paste is equal to # / 3
-#     glove_of_garlic is equal to # * 2
-#     tablespoon_oregano is equal to #
+#     tomato_sauce is equal to # / 2
+#     cup_of_tomato_paste is equal to # / 12
+#     glove_of_garlic is equal to # / 2
+#     tablespoon_oregano is equal to # /4
 #     return tomato_sauce, cup_of_tomato_paste, glove_of_garlic, tablespoon_oregano
 
 
