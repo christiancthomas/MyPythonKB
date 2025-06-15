@@ -10,3 +10,7 @@ source/readme.md
 source/**/__pycache__/
 .ipynb_checkpoints
 
+# data
+*.txt
+*.csv
+*.json
