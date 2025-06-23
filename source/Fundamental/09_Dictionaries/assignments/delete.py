@@ -7,3 +7,5 @@ def delete(roster):
     if player in roster:
         del roster[player]
         print(f"{player} removed from roster.")
+    else:
+        print(f"{player} not found on roster.")

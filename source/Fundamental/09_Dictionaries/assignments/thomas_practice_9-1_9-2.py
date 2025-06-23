@@ -1,6 +1,6 @@
 """
 Christian Thomas
-Complete 
+Complete
 
 This program is a roster management tool for a fictional football team: The ACC Riverbats 🦇
 
@@ -11,8 +11,7 @@ function will exist in a separate module and will be imported into main which wi
 the main program and menu functionality.
 """
 
-import create, read, update, delete
-import pickle
+import create, read, update, delete, save, load
 
 # Global constants for menu choices
 CREATE = 1
@@ -27,10 +26,13 @@ def main():
     choice = 0
 
     while choice != QUIT:
-        choice = get_menu_choice()
+        try:
+            choice = get_menu_choice()
+        except ValueError:
+            choice = 0
 
         # load pickled dict
-        load(roster)
+        roster = load.load("roster.pkl")
 
         if choice == CREATE:
             create.create(roster)
@@ -40,17 +42,10 @@ def main():
             update.update(roster)
         elif choice == DELETE:
             delete.delete(roster)
-        
+
         # save pickled dict
-        save(roster)
-    """
-    TODO:
-    - Save the dictionary – write a function to pickle the dictionary to a file
-    - Retrieve the dictionary – write a function to retrieve the pickled
-    dictionary that was saved earlier
-    - Put both functions in a separate module that is imported by your main
-    program
-    """
+        if choice != QUIT:
+            save.save(roster)
 
 # Get menu choice from user
 def get_menu_choice():
